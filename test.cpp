@@ -523,7 +523,7 @@ TEST(Deck, EmptyDeckTransferOneCardCheckHand)
     ASSERT_TRUE(ArraysMatch(hand_after, hand_before));
 }
 
-#if 0
+#if 1
 TEST(Deck, ThreeCardDeckTransferThreeCardsBufferOverflowCheckDeck)
 {
     const int starting_cards_on_deck = 3;

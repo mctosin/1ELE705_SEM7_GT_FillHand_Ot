@@ -15,6 +15,21 @@ unsigned int fillHandExt(Card* const wDeck, Card* const wHand, const unsigned in
 
 /*  Descrição do Assignment  */
 /*
+    No assignment anterior, você construiu a função fillHandExt, cuja cópia das especificações 
+segue abaixo em destaque ao final deste texto.
+    Neste novo assignment você irá otimizar a implementação da função fillHandExt. Na especificação
+anterior, para cada carta transferida do deck para a hand, o deck de cartas deveria ser atualizado.
+Assim, para cada carta transferida o deck inteiro deveria ser deslocado. Caso tivéssemos N cartas 
+efetivamente transferidas (N <= Ncards), teríamos N procedimentos de deslocamento no deck.
+    Isso pode ser otimizado se fizermos primeiro todas as transferências do deck para a hand e,
+somente depois, fizermos um único procedimento de deslocamento das cartas que devem restar no deck
+(ou que não foram transferidas).
+
+*/ 
+
+
+/*  Cópia da Descrição do Assignment Anterior */
+/*
     Neste assignment você deve entender a parte do código necessária para realizar a tarefa e deve
 codificar a função fillHandExt segundo as especificações abaixo
     O tipo Card define a struct Card, que por sua vez define as informações em cada carta. Agora,
